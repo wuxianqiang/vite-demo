@@ -4,9 +4,9 @@
 import HelloWorld from './components/HelloWorld.vue'
 
 // https://jsonplaceholder.typicode.com/posts/1
-fetch('/api/posts/1')
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+// fetch('/api/posts/1').then((response) => response.json()).then((json) => console.log(json))
+
+fetch('/api/get').then((response) => response.json()).then((json) => console.log(json))
 </script>
 
 <template>

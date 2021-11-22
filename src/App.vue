@@ -2,6 +2,11 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import HelloWorld from './components/HelloWorld.vue'
+
+// https://jsonplaceholder.typicode.com/posts/1
+fetch('/api/posts/1')
+  .then((response) => response.json())
+  .then((json) => console.log(json));
 </script>
 
 <template>

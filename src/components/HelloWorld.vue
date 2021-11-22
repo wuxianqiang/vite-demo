@@ -1,11 +1,13 @@
-<script setup>
-import { ref } from 'vue'
+<script lang="ts" setup>
+import { reactive, ref } from 'vue'
 
 defineProps({
   msg: String
 })
 
 const count = ref(0)
+
+const state = reactive({count: 0})
 </script>
 
 <template>

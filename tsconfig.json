@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 编译的目标
+    "module": "ESNext", // 现在的语法
+    "moduleResolution": "node", // classic node
+    "strict": true,
+    "jsx": "preserve", // 保留不转译 react jsx=>React.createElement
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true, // 可以进行模块转换
+    "lib": ["ESNext", "DOM"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+}
